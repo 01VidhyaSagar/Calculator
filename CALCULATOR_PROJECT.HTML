@@ -1,0 +1,98 @@
+<!-- Calculator using HTML,Css and javaScript -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>  Calculator </title>
+
+<style>
+h1 {
+	text-align: center;
+	padding: 23px;
+	background-color:RED;
+	color: WHITE;
+	}
+
+#clear{
+width: 280px;
+border: 4px solid blue;
+	border-radius: 100px;
+	padding: 15px;
+	background-color: blue;
+}
+
+.form1
+{
+width: 300px;
+height: 540px;
+margin:auto;
+border: 10px yellow;
+border-style:groove;
+border-radius: 100px;
+padding: 30px;
+}
+
+
+
+.button
+{
+width: 20px;
+background-color: red;
+color: white;
+border: 3px solid gray;
+	border-radius: 40px;
+	padding:26px;
+	margin: 5px;
+	font-size: 15px;
+}
+
+
+#calc{
+width: 240px;
+background-color:white;
+border: 5px solid gold;
+border-style:groove;
+	border-radius: 50px;
+	padding: 20px;
+	margin:auto;
+}
+
+</style>
+
+</head>
+<body>
+<h1> Calculator </h1>
+<div class= "form1">
+<form name = "form1">
+  <input id = "calc" type ="text" name = "answer"> <br> <br>
+  <input type = "button" value = "1" class="button" onclick = "form1.answer.value += '1' ">
+  <input type = "button" value = "2" class="button" onclick = "form1.answer.value += '2' ">
+  <input type = "button" value = "3" class="button" onclick = "form1.answer.value += '3' ">
+   <input type = "button" value = "+" class="button" onclick = "form1.answer.value += '+' ">
+  <br> <br>
+  
+  <input type = "button" value = "4" class="button"onclick = "form1.answer.value += '4' ">
+  <input type = "button" value = "5"class="button" onclick = "form1.answer.value += '5' ">
+  <input type = "button" value = "6"class="button" onclick = "form1.answer.value += '6' ">
+  <input type = "button" value = "-" class="button"onclick = "form1.answer.value += '-' ">
+  <br> <br>
+  
+  <input type = "button" value = "7"class="button" onclick = "form1.answer.value += '7' ">
+  <input type = "button" value = "8"class="button" onclick = "form1.answer.value += '8' ">
+  <input type = "button" value = "9"class="button" onclick = "form1.answer.value += '9' ">
+  <input type = "button" value = "*"class="button" onclick = "form1.answer.value += '*' ">
+  <br> <br>
+  
+  
+  <input type = "button" value = "/"class="button" onclick = "form1.answer.value += '/' ">
+  <input type = "button" value = "0"class="button" onclick = "form1.answer.value += '0' ">
+    <input type = "button" value = "."class="button" onclick = "form1.answer.value += '.' ">
+  <input type = "button" value = "="class="button" onclick = "form1.answer.value = eval(form1.answer.value) ">
+  <input type = "button" value = "Clear All" onclick = "form1.answer.value = ' ' " id= "clear" >
+  <br> 
+  
+</form>
+</div>
+</body>
+</html>
+
+ 
